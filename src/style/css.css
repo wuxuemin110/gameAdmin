@@ -1,0 +1,656 @@
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: "Microsoft Yahei", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+body:focus,
+div:focus,
+span:focus,
+header:focus,
+footer:focus,
+nav:focus,
+section:focus,
+aside:focus,
+article:focus,
+ul:focus,
+dl:focus,
+dt:focus,
+dd:focus,
+li:focus,
+a:focus,
+p:focus,
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+i:focus,
+b:focus,
+textarea:focus,
+button:focus,
+input:focus,
+select:focus,
+figure:focus,
+figcaption:focus {
+  outline: none;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+  -webkit-appearance: none;
+}
+textarea {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.fillcontain {
+  height: 100%;
+  width: 100%;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
+.back_img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.margin {
+  margin: 0 auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.allcover {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ctt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login_page {
+  background-color: #324057;
+}
+.login_page .manage_tip {
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  left: 0;
+}
+.login_page .manage_tip p {
+  font-size: 34px;
+  color: #fff;
+}
+.login_page .form_contianer {
+  width: 320px;
+  height: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -105px;
+  margin-left: -160px;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+.login_page .form_contianer .submit_btn {
+  width: 100%;
+  font-size: 16px;
+}
+.login_page .tip {
+  font-size: 12px;
+  color: red;
+}
+.login_page .form-fade-enter-active,
+.login_page .form-fade-leave-active {
+  transition: all 1s;
+}
+.login_page .form-fade-enter,
+.login_page .form-fade-leave-active {
+  transform: translate3d(0, -50px, 0);
+  opacity: 0;
+}
+.el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active,
+.el-menu-item.is-active {
+  color: #00c5c4;
+}
+.header_container {
+  padding: 0 20px;
+  height: 56px;
+  line-height: 56px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_container .Breadcrumb a {
+  color: #333333;
+  font-size: 16px;
+}
+.header_container .userName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_container .userName img {
+  width: 40px;
+  border-radius: 50%;
+}
+.header_container .userName span {
+  margin-left: 17px;
+  color: #333333;
+  font-size: 16px;
+}
+.searchContent {
+  overflow: hidden;
+  padding-top: 35px;
+}
+.searchContent .addBtn {
+  width: 80px;
+  height: 34px;
+  background: #f8d347;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  float: right;
+  margin-right: 42px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.gameContent {
+  width: 98%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.gameContent .gameContail {
+  background: #fff;
+  margin-top: 20px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.gameContent .search {
+  width: 280px;
+  float: right;
+  height: 33px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  margin-right: 60px;
+  position: relative;
+}
+.gameContent .search i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  margin-top: -8px;
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../assets/search.png") no-repeat;
+}
+.gameContent .search input {
+  width: 155px;
+  height: 100%;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 43px;
+}
+.gameContent .search .searchBtn {
+  width: 85px;
+  height: 35px;
+  background: #00c4c2;
+  line-height: 35px;
+  color: #fff;
+  font-size: 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  cursor: pointer;
+}
+.gameList {
+  background: #FFF;
+  padding: 20px 44px;
+  min-height: 500px;
+  position: relative;
+}
+.gameList .noData {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gameList .ganmeBtn {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  margin-top: 40px;
+  padding-bottom: 23px;
+}
+.gameList .ganmeBtn .btn {
+  width: 113px;
+  height: 42px;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.gameList .ganmeBtn .btn span {
+  vertical-align: middle;
+  color: #FFF;
+}
+.gameList .ganmeBtn .btn i {
+  display: inline-block;
+  width: 25px;
+  vertical-align: middle;
+  height: 25px;
+}
+.gameList .ganmeBtn .detaBtn {
+  background: #00c4c2;
+  margin-right: 50px;
+}
+.gameList .ganmeBtn .detaBtn i {
+  background: url("../assets/xq.png") no-repeat;
+}
+.gameList .ganmeBtn .bianjiBtn {
+  background: #57c8f2;
+}
+.gameList .ganmeBtn .bianjiBtn i {
+  background: url("../assets/bj.png") no-repeat;
+}
+.gameList .gametop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+.gameList .gametop .topText {
+  margin-left: 18px;
+}
+.gameList .gametop img {
+  width: 115px;
+  height: 115px;
+  display: block;
+  border-radius: 20px;
+}
+.gameList .gametop .topText h1 {
+  color: #333333;
+  font-size: 20px;
+}
+.gameList .gametop .topText span {
+  color: #666666;
+  font-size: 16px;
+  margin-top: 15px;
+  display: block;
+}
+.gameList .ganmePerson {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-top: 24px;
+}
+.gameList .ganmePerson div {
+  width: 49%;
+  color: #333333;
+  font-size: 15px;
+}
+.gameList .ganmePerson div:nth-child(1) {
+  border-right: 1px solid #dedede;
+}
+.gameList .ganmePerson .regNum {
+  text-align: left;
+}
+.gameList .ganmePerson .activeNum {
+  text-align: right;
+}
+.gameList ul {
+  overflow: hidden;
+  margin-right: -30px;
+}
+.gameList ul li {
+  width: 340px;
+  border: 1px solid #f1f2f7;
+  float: left;
+  margin-right: 27px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.gameList ul li .state {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 35px;
+  top: 0;
+  right: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 35px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: #f1f2f7;
+  text-align: center;
+}
+.gameList ul li:hover {
+  border: 1px solid #f8d347;
+}
+.home {
+  height: 100%;
+}
+.Pagination {
+  background: #fff;
+  text-align: center;
+}
+.headerTop {
+  height: 70px;
+  line-height: 70px;
+  background-image: url("../assets/top.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerTop .headerName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerTop .headerName img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.headerTop .headerName span {
+  font-size: 26px;
+  color: #fff;
+  margin-left: 15px;
+}
+.headerTop .headerEsc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.headerTop .headerEsc span {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 12px;
+}
+.dataAll {
+  width: 20%;
+  padding: 40px;
+  float: left;
+  background: #fff;
+}
+.dataAll .name {
+  color: #333333;
+  font-size: 16px;
+  border-left: 2px solid #57c8f2;
+  padding-left: 13px;
+}
+.dataAll ul {
+  margin-top: 40px;
+}
+.dataAll ul li {
+  width: 270px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  box-shadow: 0px 0px 5px rgba(12, 6, 14, 0.1);
+  box-sizing: border-box;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+.dataAll ul li p {
+  color: #666666;
+  font-size: 16px;
+}
+.dataAll ul li h1 {
+  color: #cccccc;
+  font-size: 36px;
+}
+.detailsContail {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.dataRight {
+  float: right;
+  width: 73%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 35px 40px;
+}
+.dataRight .userSearch .name {
+  color: #333333;
+  font-size: 16px;
+  border-left: 2px solid #57c8f2;
+  padding-left: 13px;
+  margin-bottom: 25px;
+}
+.userItem {
+  overflow: hidden;
+  padding: 12px 0px;
+  border-bottom: 1px solid #dcdfe1;
+}
+.userItem .date {
+  color: #333333;
+  font-size: 16px;
+  float: left;
+}
+.userItem .date .block {
+  display: inline-block;
+}
+.userItem:nth-child(1) {
+  border-top: 1px solid #dcdfe1;
+}
+.userList {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+.userList .name {
+  color: #333333;
+  font-size: 16px;
+  border-left: 2px solid #57c8f2;
+  padding-left: 13px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.userList .name .addBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: #ffffff;
+  width: 99px;
+  height: 30px;
+  border-radius: 5px;
+  background: #f8d347;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.addGame {
+  padding: 40px;
+}
+.addGame .name {
+  color: #333333;
+  font-size: 16px;
+  border-left: 2px solid #57c8f2;
+  padding-left: 12px;
+}
+.addGame .name span {
+  font-size: 14px;
+  color: #666666;
+  padding-left: 15px;
+}
+.gameForm {
+  width: 550px;
+  margin-top: 50px;
+}
+.indexIcon {
+  display: block;
+  width: 18px;
+  height: 20px;
+  background: url("../assets/shouye.png") no-repeat;
+}
+.userIcon {
+  display: block;
+  width: 24px;
+  height: 20px;
+  background: url("../assets/yhgl.png") no-repeat;
+}
+.sliderTab li {
+  width: 100%;
+  height: 60px;
+}
+.sliderTab li a {
+  display: block;
+  box-sizing: border-box;
+  padding-left: 2px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height: 60px;
+}
+.sliderTab li a span {
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  transform: translateY(-50%);
+}
+.sliderTab li a .ICON {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.sliderTab li a .arrowRight {
+  display: block;
+  width: 9px;
+  height: 16px;
+  background: url("../assets/arraw.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+.sliderTab li .router-link-active {
+  color: #00c4c2;
+}
+.table .el-table .cell {
+  padding: 10px ;
+  text-align: center;
+}
+.pink {
+  color: #ff6c60;
+}
+.el-breadcrumb {
+  font-size: 16px;
+}
+/*# sourceMappingURL=css.css.map */
